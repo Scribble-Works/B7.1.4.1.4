@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proportional Reasoning Quiz (100 Marks)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Proportional Reasoning & Plotting Quiz</h1>
+        <p>Objective: Find the missing proportional values (10 marks each) and plot the points.</p>
+        <button id="start-btn" onclick="startGame()">▶️ Start Game (Total 10 Questions)</button>
+
+        <div id="quiz-area">
+            </div>
+
+        <button id="check-btn" onclick="checkAnswers()" style="display:none;">✅ Game Over & Calculate Score</button>
+        
+        <div id="score-area" style="display:none;">
+            <h2>Game Over! Your Results:</h2>
+            <p id="final-score" style="font-size: 24px; font-weight: bold;"></p>
+            <p id="score-feedback"></p>
+        </div>
+
+        <div id="plot-area" style="display:none;">
+            <h3>Visualization: Plot of Question 1's Data</h3>
+            <div class="graph-container">
+                <canvas id="proportional-graph" width="400" height="400"></canvas>
+            </div>
+            <p>*(The plot shows the proportional relationship for the first question only)*</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
